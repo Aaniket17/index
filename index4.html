@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Navigation</title>
+    <style>
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav li {
+            margin-right: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="#home" aria-current="page">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#exhibits">Exhibits</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Home</h1>
+        <!-- Home content -->
+    </section>
+    
+    <section id="about">
+        <h1>About</h1>
+        <!-- About content -->
+    </section>
+    
+    <section id="exhibits">
+        <h1>Exhibits</h1>
+        <!-- Exhibits content -->
+    </section>
+    
+    <section id="contact">
+        <h1>Contact</h1>
+        <!-- Contact content -->
+    </section>
+</body>
+</html>
